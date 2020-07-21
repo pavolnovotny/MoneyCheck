@@ -1,0 +1,75 @@
+.container{
+    display: flex;
+    width: 60%;
+    
+    justify-content: space-evenly;
+    // background-color: $color-primary-light;
+    // box-shadow: $box-shadow-2;
+
+    &__left,&__right{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__middle{
+        align-self: center;
+    }
+
+    &__left--label, &__right--label{
+        
+        text-align: center;
+    } 
+
+    &__left--input, &__right--input{
+        
+        width: 13rem;
+        margin-bottom: 2rem;
+        
+    } 
+    
+}
+
+
+.rate{
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+
+.pik{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+}
+
+.exchanger{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto;
+    background-color: $color-white;
+    box-shadow: $box-shadow-2;
+    width: 60%;    
+    align-items: center;
+    padding: 2rem;
+    height: 50vh;
+    @include respond(phone) {
+        width: 100%;
+        
+      }
+}
+
+.btn{
+    
+    font-size: 2rem;
+    vertical-align: middle;
+    border: none;
+    cursor: pointer;
+    background: none;
+
+  }
+
+
+  .btn:focus {
+    transform: translateY(2px);
+    outline: none;
+  }

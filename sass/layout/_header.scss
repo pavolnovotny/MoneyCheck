@@ -1,0 +1,71 @@
+.header {
+  height: 10vh;
+  background-image: linear-gradient(to right, $color-primary-light , $color-primary-dark);
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+
+  &__title{
+    margin-left: 15rem;
+    transition: all 0.3s;
+    &:hover{
+      transform: scale(1.2);
+      
+    }
+    @include respond(tab-port) {
+      margin-left: 10rem;
+      
+    }
+    @include respond(phone) {
+      display: none;
+      
+    }
+  }
+  
+  
+  &__nav{
+    
+    font-size: 1.4rem;
+    &--list{
+      list-style: none;
+      display: flex;
+    }
+    &--item:first-child{
+      margin-right: 2rem;
+    }
+    &--link, :focus,:visited{
+      text-decoration: none;
+      color: $color-white;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      
+    }
+    &--link:hover{
+      color: $color-primary-light;
+    }
+
+
+    &--icon{
+      margin-right: .6rem;
+      
+    }
+
+         
+        
+  }
+  
+  &__logo{
+    width: 9rem;
+    height: 7rem;
+    
+    
+    &--pic{
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+    }
+  }
+  
+  
+}

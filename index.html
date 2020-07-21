@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/icons.css" />
+    <!-- <link rel="stylesheet" href="css/icon-font.css" /> -->
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <title>Money Check</title>
+  </head>
+  <body>
+    
+    <header class="header">      
+      <div class="header__logo" >
+        <img src="./img/lo.png" class="header__logo--pic" alt="">
+      </div>
+      <div class="header__title">
+        <h2 class="heading-primary">Money Check</h2>
+      </div>     
+        <nav class="header__nav" >
+          <ul class="header__nav--list">
+            <li class="header__nav--item active "><a class="header__nav--link" href="./index.html"><i class="fas fa-home header__nav--icon"></i>Home</a></li>
+            <li class="header__nav--item "><a class="header__nav--link" href="./exchangeMoney.html"><i class="fas fa-sync-alt header__nav--icon"></i>Exchange money</a></li>           
+          </ul>
+        </nav>
+      
+      
+    </header>
+
+    <main>
+      <div class="story">
+        <!-- upper buttons -->
+          <div class="upper">
+            <div class="ctrl">
+              <div class="ctrl__wrapper">
+                <input type="text" class="ctrl__item" placeholder="Add description">
+                <select class="ctrl__type">
+                  <option value="inc" selected>+</option>
+                  <option value="exp">-</option>
+              </select>
+                <input type="number" class="ctrl__value" placeholder="Value">
+                <button class="ctrl__btn"><i class="fas fa-check-circle"></i></button>
+
+              </div>
+            </div>
+          </div> 
+          <!-- middle total and total exp and total inc -->
+          <div class="middle">
+            <div class="calc">
+              <div class="calc__value"> 0 €</div>
+            </div>  
+          <div class="middle__bottom">
+            <div class="calc__income">
+              <div class="calc__income--text">Income</div>
+              <div class="calc__income--value">0 €</div>            
+            </div> 
+            
+            <div class="calc__expenses">
+              <div class="calc__expenses--text">Expenses</div>
+              <div class="calc__expenses--value">0 €</div>            
+            </div> 
+         </div>           
+         </div>
+         <!-- bottom - items -->
+         <div class="bottom">
+          <!-- income -->
+          <div class="income">
+            <h2 class="income__heading">Income</h2>
+
+            <div class="income__list">
+
+              <!-- <div class="item" id="income-0">
+                <div class="item__description">Salary</div>                
+                <div class="item__value">+ 2,100.00</div>
+                <button class="item__delete">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+                  
+                </div>  
+                
+                
+                <div class="item" id="income-0">
+                  <div class="item__description">Salary</div>                
+                  <div class="item__value">+ 2,100.00</div>
+                  <button class="item__delete">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>                
+                </div> -->
+              </div>
+
+              
+
+            </div>
+          
+          <!-- espense -->
+          <div class="expense">
+            <h2 class="expense__heading">Expenses</h2>
+
+            <div class="expense__list">
+
+              <!-- <div class="item" id="expense-0">
+                <div class="item__description">Salary</div>                
+                <div class="item__value">- 2,100.00</div>
+                <button class="item__delete">
+                  <i class="fas fa-trash-alt"></i>
+                </button>                
+              </div>
+
+              <div class="item" id="expense-0">
+                <div class="item__description">Salary</div>                
+                <div class="item__value">- 2,100.00</div>
+                <button class="item__delete">
+                  <i class="fas fa-trash-alt"></i>
+                </button>               
+              </div> -->
+
+
+            </div>
+          </div>
+         </div>
+          
+          
+
+
+
+
+
+
+        </div>
+        </div>
+    </main>
+     
+    <footer class="footer" > 
+                  
+       <p class="footer__text">Copyright ©2020 created by Pavol Novotny</p>
+                         
+    </footer>
+  
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+.upper{  
+  
+  border-bottom: 1px solid $color-primary-dark;
+  }
+
+.ctrl{
+  &__wrapper{
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__item, &__value{
+    margin-right: 1rem;
+    border-radius: .3rem;
+    padding: .5rem .7rem;
+    border: 1px solid $color-primary-dark;
+    height: 2.5rem;
+    
+    
+  }
+
+  &__item{
+    width: 20rem;
+  }
+  &__value{
+    width: 8rem;
+  }
+
+  &__type{
+    
+    height: 2.5rem;
+    border-radius: .3rem;
+    border: 1px solid $color-primary-dark;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1.4rem;
+  }
+  &__btn{
+    
+    font-size: 2.5rem;
+    vertical-align: middle;
+    border: none;
+    cursor: pointer;
+    background: none;
+
+  }
+
+  &__item:focus, &__value:focus, &__type:focus {
+    outline: none;
+  }
+
+  &__btn:focus{
+    transform: translateY(2px);
+    outline: none;
+  }
+  
+
+}
+
+// middle
+.middle{
+ width: 70%;
+
+ @include respond(tab-land) {
+  width: 100%;
+  
+}
+ 
+}
+.calc{
+  &__value{
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 2rem;  
+    display: block;
+   
+  }
+
+  &__income{
+    background-color: $color-green;
+  }
+  &__expenses{
+    background-color: $color-red;
+    
+  }
+
+  &__income, &__expenses{
+    width: 20rem;
+    display: flex;
+    border: 1px solid $color-black;
+    padding: .5rem 1rem;
+    justify-content: space-between;
+    color: $color-white;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    box-shadow: $box-shadow;
+    
+  }
+
+}
+
+
+.middle__bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+}
+
+// bottom
+
+.bottom{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+
+
+  
+
+}
+
+.income__heading, .expense__heading{
+  text-align: center;
+  margin: 2rem 0;
+  
+}
+.income__heading{
+  color: $color-green;
+}
+.expense__heading{
+  color: $color-red;
+}
+
+
+.item{
+  display: flex;
+  border-bottom: 1px solid $color-black;
+  border-top: 1px solid $color-black;
+  padding: .5rem 1rem;
+  width: 20rem;
+  justify-content: space-between;
+  color: $color-black;
+  background-color: $color-primary-light ;
+  margin-bottom: 1px;
+
+  &__description{
+    flex: 1;
+  }
+
+  &__delete{
+    cursor: pointer;
+    margin-left: 1rem;
+    border: none;
+    background: none;
+    font-size: 1.4rem;
+    &:focus{
+      outline: none;
+      transform: translateY(2px);
+    }
+
+    
+  }
+  
+
+}
+
+.income__list, .expense__list{
+  margin-bottom: 2px;
+}
+
+.error{
+  color:$color-red;
+  text-align: center;
+}
+
+.active{
+  // background-color: red;
+  border-bottom: 2px solid $color-red;
+  
+}
